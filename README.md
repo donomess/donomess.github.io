@@ -1,5 +1,5 @@
 # donomess.github.io
-Name: Donovan Messer\n
+Name: Donovan Messer
 
 Purpose of this Page: Right now, this serves as a portfolio for my CISC275 class.
 
