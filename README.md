@@ -9,6 +9,6 @@ Repository: [Link to my repository](https://github.com/donomess/donomess.github.
 
 About me Page (HTML) : [Click Here!](https://donomess.github.io/index.html)
 
-TODO : [Click Here!]()
+TODO : [Click Here!](https://donomess.github.io/TODO.html)
 
-Changelog: [Click Here!]()
+Changelog: [Click Here!](https://donomess.github.io/Changelog.html)
