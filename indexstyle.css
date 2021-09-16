@@ -1,0 +1,13 @@
+body{
+    font-size: 16px;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 600px;
+    color: black;
+}
+
+.important{
+    color:red;
+    font-style: italic;
+    font-size: 20px;
+}
