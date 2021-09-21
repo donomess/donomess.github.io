@@ -15,3 +15,28 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Formatting template for accordion from https://www.w3schools.com/howto/howto_js_accordion.asp */
+
+.accordion { /* Default State */
+    background-color: aliceblue;
+    color:blueviolet;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border:none;
+    outline:none;
+    transition: 0.45s;
+}
+
+.active, .accordion:hover{ /*When the button is clicked, or a mouse is hovering over the button */
+    background-color: cornsilk;
+}
+
+.panel { /*Styling for the dropped down panel */
+    padding: 0 20px;
+    background-color: whitesmoke;
+    display: none;
+    overflow: hidden;
+}
