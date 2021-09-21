@@ -1,4 +1,5 @@
 function copyurl(link){ //Allows a url to be copied to clipboard on click.
+    // Referenced from: https://orclqa.com/copy-url-clipboard/
     $("url_public_id").show()
     var copiedUrl = document.body.appendChild(document.createElement("copied"));
     copiedUrl.value = window.location.href;
