@@ -19,23 +19,6 @@ function Square(props) {
         };
     }
 
-    handleClick(i){
-        const history = this.state.history.slice(0, this.state.stepNumber + 1);
-        const current = history[this.state.stepNumber];
-        const squares = current.squares.slice();
-        if (calculateWinner(squares) || squares[i]) {
-            return;
-        }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
-        this.setState({
-            history: history.concat([{
-                squares: squares,
-            }]),
-            stepNumber: history.length,
-            xIsNext: !this.state.xIsNext,
-        });
-    }
-
     renderSquare(i) {
       return <Square 
       value={this.props.squares[i]}
@@ -77,6 +60,23 @@ function Square(props) {
             xIsNext : true,
         };
     }
+    
+    handleClick(i){
+      const history = this.state.history.slice(0, this.state.stepNumber + 1);
+      const current = history[this.state.stepNumber];
+      const squares = current.squares.slice();
+      if (calculateWinner(squares) || squares[i]) {
+          return;
+      }
+      squares[i] = this.state.xIsNext ? 'X' : 'O';
+      this.setState({
+          history: history.concat([{
+              squares: squares,
+          }]),
+          stepNumber: history.length,
+          xIsNext: !this.state.xIsNext,
+      });
+  }
 
     jumpTo(step){
         this.setState({
