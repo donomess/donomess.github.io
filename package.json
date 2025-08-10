@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "npm": "^11.5.2"
+  },
+  "name": "donomess.github.io",
+  "description": "This github pages serves as my personal webpage and portfolio (if im ever motivated enough to put all my projects in here)",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donomess/donomess.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donomess/donomess.github.io/issues"
+  },
+  "homepage": "https://github.com/donomess/donomess.github.io#readme"
+}
