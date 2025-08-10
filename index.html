@@ -1,23 +1,116 @@
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="indexstyle.css">
-        <title>Welcome to my Github!</title>
-    </head>
-    <body>
-        <script src="scripts.js"></script>
-        <p class="important">
-            This page will now serve as the hub of my github link, 
-            <button onclick="copyurl('donomess.github.io')">donomess.github.io (Click to copy the link.)</button><br> 
-            Please enjoy your stay, grading whatever nonsense I have coded this week.
-        </p>
-        <p>Name: Donovan Messer</p>
-        <p>Email: dmesser@udel.edu (School Contact), donovanmess01@gmail.com (Personal Contact)</p>
-        <a href=https://donomess.github.io/aboutme.html><p>An about me page to learn more about me.</p></a>
-        <a href=https://github.com/donomess/donomess.github.io><p>Link to my repository for this website.</p></a>
-        <a href=https://donomess.github.io/TODO.html><p>My Todo page for this project.</p></a>
-        <a href=https://donomess.github.io/Changelog.html><p>My changelog for this project</p></a>
-        <br>
-        <a href=https://donomess.github.io/tic-tac-toe-react><p>Here is a link to my tic-tac-toe app, where I followed the react tutorial.</p></a>
-        <a href=https://donomess.github.io/chess-react>Here is my react app, a game of chess. </a>
-    </body>
+	<head>
+		<title>Donovan's Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+			<header id="header">
+				<div class="inner">
+					<a href="images/avatar.jpg" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>My name is Donovan Messer,</strong><br />
+					a 24 year-old graduate student and working professional.<br /></h1>
+				</div>
+			</header>
+
+			<div id="main">
+					<section id="one">
+						<header class="major">
+							<h2>I am an aspiring Cybersecurity professional based out<br />
+							of the Greater Philadelphia area.</h2>
+						</header>
+						<p>I currently work as an IO Engineer (DevOps) with OptumRx and have been working for Optum since July of 2023. I currently am studying for my Master's in Cybersecurity at the University of Delaware. While I do enjoy DevOps engineering, my true passion is Cybersecurity. At this point, I just want to branch into Cybersecurity, and enjoy both offensive and defensive security, and would be happy to work in a Red, Blue, or Purple team position.</p>
+						<ul class="actions">
+							<li><a href="images/MesserResume25.pdf" class="button">View my resume!</a></li>
+						</ul>
+					</section>
+
+					<section id="two">
+						<h2>Personal/Educational Projects</h2>
+						<p>(Click project names for hyperlink)</p>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<img src="images/Illyustratsiya_bez_nauuzvaniya-20.png"  class="image fit"  alt="Pdf thumbnail to represent project" />
+								<a target="_blank" rel="noopener noreferrer" href="https://github.com/donomess/cpeg696-malware-analysis"><h3>Machine Learning PDF Analyzer</h3></a>
+								<p>Grad school class project. This is being expanded on in a separate project that will be published later this year.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<img src="images/f1thumb.jpg" class="image fit" alt="F1 thumbnail to represent project" />
+								<a target="_blank" rel="noopener noreferrer" href="https://github.com/donomess/f1-data"><h3>F1 Data Analysis</h3></a>
+								<p>Partially completed project. When completed, will be a full data analysis of F1 race and quali data utilizing pandas.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<img src="images/discord.png"  class="image fit"  alt="discord thumbnail representing project" />
+								<a target="_blank" rel="noopener noreferrer" href="https://github.com/donomess/Contract-Bot"><h3>Discord Racing League Bot</h3></a>
+								<p>Custom made Discord bot for a sim racing league server. Currently deals with driver and team principal contracts. Will be expanded upon to cover more server utilities when I have more time (haha, good one, Donovan)</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<img src="images/canvas logo-red_0.png"  class="image fit"  alt="" />
+								<a target="_blank" rel="noopener noreferrer" href="https://github.com/donomess/more-canvas-tools"><h3>Canvas Assignment Extender</h3></a>
+								<p>Done as part of an Undergrad independent study. Extending assignments on canvas manually can be a pain, so I made this tool to make it easy! Scriptmonkey needed for integration.</p>
+							</article>
+						</div>
+					</section>
+				
+					<section id="three">
+						<h4>Contact Me!</h4>
+						<form method="POST" action="https://formspree.io/f/xldlaoov">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Sender Name" id="Sender Name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="sender email" id="sender email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<select name="email category" id="email category">
+										<option value="">- Category -</option>
+										<option value="General">General Contact</option>
+										<option value="Work Opportunity">Work Opportunity</option>
+										<option value="Collab">Looking to Collaborate</option>
+										<option value="FavFood">Telling me Your Favorite Food</option>
+									</select>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="Cool button" name="Cool Button">
+									<label for="Cool button">This box does nothing but they say cool people check this box</label>
+								</div>
+								<div class="col-12">
+									<textarea name="Email message" id="Email message" placeholder="Enter your message! I'll try and get back to you within 1-2 business days!" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>	
+
+			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/donovanmesser/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/donomess" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Copyrighter? I hardly know er!</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
